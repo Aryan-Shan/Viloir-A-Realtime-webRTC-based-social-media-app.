@@ -1,0 +1,12 @@
+{
+  "name": "viloir",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'No build step needed for this project'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Viloir</title>
+    <link rel="icon" href="assets/misc/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/root/nav_pages.css">
+    <link rel="stylesheet" href="css/responsive/nav_pages_responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bungee+Shade&family=Honk&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tajawal:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>About Viloir</h1>
+    </header>
+    <main class="about">
+        <section class="about-section" id="how-it-started">
+            <h2>How It Started</h2>
+            <p>Started as a fun project late this year, we decided to build it into a full-fledged website
+                for students to interact with each other. Our aim is to help facilitate conversation among 
+                students and reduce the communication gap. Inspired by the Video Chat-Roulletes available 
+                in the market we decided to build one specifically for our college.
+            </p>
+        </section>
+        <section class="about-section" id="technologies-used">
+            <h2>Technologies Used</h2>
+            <p>
+                We initially thought of using MongoDB as the database for this project but then resorted to
+                firebase. It is because firebase is helpful in authenticating users and also it offers a realtime
+                database for random match-making. We tried using firebase as the signalling server for our project
+                but it was too complex for us to implement. That's why we used JavaScript's PeerJS library for handling
+                the calls between connected peers.
+
+                The website itself is based on vanilla HTML,CSS and JavaScript.
+            </p>
+        </section>
+        <section class="about-section" id="future-prospects">
+            <h2>Future Prospects</h2>
+            <p>Currently our website is limited to connections made over mobile data because NAT traversal is a huge issue
+                in our institution. It is because of the firewall security rules that we are limited to use the STUN servers.
+                In future we are hoping to implement a TURN server when normal connection cannot be established.
+            </p>
+        </section>
+    </main>
+</body>
+</html>

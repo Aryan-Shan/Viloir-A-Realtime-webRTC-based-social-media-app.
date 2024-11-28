@@ -1,0 +1,191 @@
+/* nav_pages.css */
+
+/* General Styling */
+body {
+    margin: 0;
+    font-family: "Bangers", sans-serif;
+    background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(25)" opacity="0.3" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23250E17"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
+    #fff;
+    background-size: 12px, 100%;
+    color: #030303;
+    line-height: 1.6;
+}
+
+header h1 {
+    text-align: center;
+    font-family: "Honk", sans-serif;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 3em;
+}
+
+/* About Page Styling */
+.about-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border: 3px solid rgb(0, 0, 0);
+    color: #000000;
+    border-width: 3px 3px 5px 5px;
+    border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+    transform: rotate(-2deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-section:hover {
+    transform: translateY(-7px);
+}
+
+.about-section h2 {
+    font-family: "Bangers", sans-serif;
+    color: rgb(5, 5, 5);
+    font-size: 1.4em;
+    border: 1px solid #222;
+    box-shadow: 3px 3px 0 #222;
+    background: #ddd;
+    width: fit-content;
+    padding: 4px;
+    margin-bottom: 4%;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    color: #000000;
+}
+
+#how-it-started {
+    background-color: yellow;
+}
+
+#technologies-used {
+    background-color: rgb(0, 255, 221);
+}
+
+#future-prospects {
+    background-color: rgb(249, 83, 83);
+}
+
+/* Meet the Makers Page Styling */
+.makers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.maker-section {
+    position: relative; /* Keep it relative to contain absolute positioned elements */
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border: 3px solid rgb(0, 0, 0);
+    border-width: 3px 3px 5px 5px;
+    border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+    transform: rotate(-2deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.maker-section:hover {
+    transform: translateY(-7px);
+}
+
+.maker-section #pfp1,#pfp2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 2px solid black;
+}
+
+.maker-info h2 {
+    font-family: "Bangers", sans-serif;
+    color: rgb(5, 5, 5);
+    font-size: 1.7em;
+    border: 1px solid #222;
+    box-shadow: 3px 3px 0 #222;
+    background: #ddd;
+    width: fit-content;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+.maker-info p {
+    font-size: 1.1em;
+    color: #000000;
+}
+
+#mk1 {
+    background-color: yellow;
+}
+
+#mk2 {
+    background-color: rgb(0, 217, 255);
+}
+#mk3 {
+    background-color: rgb(232, 105, 190);
+}
+#mk4 {
+    background-color: rgb(135, 233, 116);
+}
+#mk5 {
+    background-color: rgb(232, 116, 116);
+}
+#mk6 {
+    background-color: rgb(128, 146, 232);
+}
+#mk7 {
+    background-color: rgb(179, 232, 63);
+}
+#mk8 {
+    background-color: rgb(245, 66, 66);
+}
+/* Social Icons Styling */
+.social-icons {
+    position: absolute;
+    top: 10px;  /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    display: flex;
+    gap: 10px; /* Adjust spacing between icons */
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Width of the icon */
+    height: 40px; /* Height of the icon */
+    background-color: transparent;
+    border: 1px solid transparent; /* Ensure there's no border */ 
+    padding: 0; /* Remove padding */
+    overflow: visible; /* Ensure visibility */
+    box-shadow: none; /* Remove shadow */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icons img {
+    width: 20px; /* Set the width of the icon */
+    height: 20px; /* Set the height of the icon */
+    display: block; /* Ensures no extra space */
+    margin: 0; /* No margin */
+    filter: brightness(0); /* Adjusts icon color */
+    transition: filter 0.3s ease; /* Smooth transition for color change on hover */
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    border:solid black;
+    border-width: 3px 3px 5px 5px;
+    border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+}
+
+.social-icons a:hover img {
+    filter: brightness(1); /* Changes icon color on hover */
+}

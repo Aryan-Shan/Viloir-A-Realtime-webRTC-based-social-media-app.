@@ -1,0 +1,188 @@
+/* Responsive Media Queries for nav_pages.css */
+
+/* Tablet Devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+    body {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+        padding: 20px;
+    }
+
+    .about-section {
+        padding: 20px;
+        max-width: 700px;
+        transform: rotate(-1deg);
+    }
+
+    .makers {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .maker-section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .maker-section #pfp1, .maker-section #pfp2 {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+
+    .maker-info h2 {
+        font-size: 1.5em;
+    }
+
+    .maker-info p {
+        font-size: 1em;
+    }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+        padding: 15px;
+    }
+
+    .about-section {
+        padding: 15px;
+        border-width: 2px 2px 4px 4px;
+        transform: rotate(-0.5deg);
+    }
+
+    .about-section h2 {
+        font-size: 1.2em;
+        padding: 3px;
+    }
+
+    .about-section p {
+        font-size: 1em;
+    }
+
+    .maker-section {
+        padding: 10px;
+        border-width: 2px 2px 4px 4px;
+    }
+
+    .maker-section #pfp1, .maker-section #pfp2 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .maker-info h2 {
+        font-size: 1.4em;
+    }
+
+    .maker-info p {
+        font-size: 0.95em;
+    }
+
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .social-icons img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Small Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+        padding: 10px;
+    }
+
+    .about-section {
+        padding: 10px;
+        border-width: 1px 1px 3px 3px;
+    }
+
+    .about-section h2 {
+        font-size: 1.1em;
+        padding: 2px;
+    }
+
+    .about-section p {
+        font-size: 0.9em;
+    }
+
+    .maker-section {
+        flex-direction: column;
+        padding: 8px;
+    }
+
+    .maker-section #pfp1, .maker-section #pfp2 {
+        width: 80px;
+        height: 80px;
+    }
+
+    .maker-info h2 {
+        font-size: 1.2em;
+    }
+
+    .maker-info p {
+        font-size: 0.85em;
+    }
+
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social-icons img {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* Very Small Devices (max-width: 320px) */
+@media (max-width: 320px) {
+    header h1 {
+        font-size: 1.5em;
+        padding: 5px;
+    }
+
+    .about-section {
+        padding: 5px;
+    }
+
+    .about-section h2 {
+        font-size: 1em;
+    }
+
+    .about-section p {
+        font-size: 0.8em;
+    }
+
+    .maker-section #pfp1, .maker-section #pfp2 {
+        width: 60px;
+        height: 60px;
+    }
+
+    .maker-info h2 {
+        font-size: 1em;
+    }
+
+    .maker-info p {
+        font-size: 0.75em;
+    }
+
+    .social-icons a {
+        width: 25px;
+        height: 25px;
+    }
+
+    .social-icons img {
+        width: 14px;
+        height: 14px;
+    }
+}

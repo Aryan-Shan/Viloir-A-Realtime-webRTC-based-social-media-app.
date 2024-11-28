@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(25)" opacity="0.3" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23250E17"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
+    #909090;
+    background-size: 12px, 100%;
+    overflow-x: hidden !important;
+}
+
+.feedback-form-container {
+    background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(0)" opacity="0.2" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23250E17"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
+    #7db4bd;
+    background-size: 10px, 100%;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    border: 2px solid black;
+    border-width: 5px 3px 3px 5px;
+  border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Honk", system-ui;
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "Bangers", system-ui;
+    font-size: 2.3rem;
+    -webkit-text-fill-color:#ffffff;
+    -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-width: 3px 3px 5px 5px;
+    border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+    overflow-y: auto;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    font-family: "Bangers", system-ui;
+    color: #000000;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    background-color: rgb(208, 202, 202);
+    transition: background-color 0.3s, transform 0.2s;
+    border: 2px solid rgb(0, 0, 0);
+    border-width: 5px 3px 3px 5px;
+    border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #eeff00;
+}
+
+/* Star Rating Styles */
+.rating {
+    text-align: center;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: row-reverse;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 40px;
+    /* color: #777777; */
+    cursor: pointer;
+    transition: color 0.2s;
+    padding: 5px;
+    -webkit-text-fill-color:#777777;
+    -webkit-text-stroke: 1px black;
+}
+
+
+.star-rating input:checked ~ label {
+    color: #ffca28;
+    -webkit-text-fill-color:#ffca28;
+    -webkit-text-stroke: 1px black;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #ffca28;
+    -webkit-text-fill-color:#ffca28;
+    -webkit-text-stroke: 1px black;
+}
+/* Responsive Styles */
+@media (max-width: 480px) {
+    .feedback-form-container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .star-rating label {
+        font-size: 20px;
+    }
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}

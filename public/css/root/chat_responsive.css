@@ -1,0 +1,121 @@
+/* Media Queries for Online User Count */
+@media (max-width: 768px) {
+    #onlineCountContainer {
+        top: 5rem; /* Move it down for smaller screens */
+        font-size: 1.2rem; /* Adjust font size */
+        padding: 1px 10px; /* Less padding for smaller screens */
+    }
+}
+
+/* Media Queries for Video Container */
+@media (max-width: 768px) {
+    #videoContainer {
+        width: 90%; /* Adjust video container width for small screens */
+        height: 60%;
+    }
+}
+
+/* Media Queries for Remote Video */
+@media (max-width: 768px) {
+    #remoteVideo {
+        width: 100%; /* Full width for small screens */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 10px;
+        border-radius: 10px;
+        box-shadow: none; /* Remove shadow for mobile */
+    }
+}
+
+/* Media Queries for Local Video */
+@media (max-width: 768px) {
+    #localVideo {
+        width: 180px; /* Reduce size for mobile */
+        height: 180px;
+        bottom: 10px; /* Adjust positioning */
+        right: 10px;
+    }
+}
+
+/* Media Queries for Controls */
+@media (max-width: 768px) {
+    .controls {
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+    }
+
+    button {
+        font-size: 0.9rem; /* Slightly smaller buttons */
+        padding: 10px 15px;
+    }
+}
+
+/* Media Queries for Small Screens (Below 480px) */
+@media (max-width: 480px) {
+    body {
+        padding: 0 10px; /* Add some space around */
+    }
+
+    #onlineCountContainer {
+        font-size: 1rem; /* Even smaller font size for very small screens */
+        padding: 1px 8px;
+    }
+
+    #videoContainer {
+        width: 100%; /* Full width for video container */
+        height: 50%; /* Adjust video height */
+    }
+
+    #remoteVideo {
+        width: 100%; /* Ensure video takes full width */
+        height: auto;
+        margin-top: 5px;
+    }
+
+    #localVideo {
+        width: 150px; /* Smaller local video circle */
+        height: 150px;
+        bottom: 5px;
+        right: 5px;
+    }
+
+    .controls {
+        bottom: 5px;
+        gap: 8px;
+    }
+
+    button {
+        font-size: 0.8rem; /* Smaller buttons on small devices */
+        padding: 8px 12px;
+    }
+}
+
+/* Media Queries for Larger Tablets (Between 480px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    #videoContainer {
+        width: 85%; /* Slightly reduced width */
+        height: 70%;
+    }
+
+    #remoteVideo {
+        width: 80%; /* Remote video adjusted to 80% for mid-sized screens */
+        height: 80%;
+        border-radius: 15px;
+    }
+
+    #localVideo {
+        width: 230px; /* Larger local video for tablets */
+        height: 230px;
+    }
+
+    .controls {
+        gap: 15px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+}

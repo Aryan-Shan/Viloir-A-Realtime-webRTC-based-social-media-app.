@@ -1,0 +1,357 @@
+html, body {
+    overflow-x: hidden;
+}
+
+/* Basic Body Styling */
+body {
+    width: 100vw;
+    margin: 0;
+    font-family: "Bangers", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(25)" opacity="0.3" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23250E17"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
+    #fff;
+    background-size: 12px, 100%;
+    overflow-x: hidden !important;
+}
+
+/* Wrapper and Banner Styling */
+.wrapper {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3);
+    background-size: 1800% 1800%;
+    animation: rainbow 10s ease infinite;
+    padding: 90px;
+}
+
+.wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+.banner, h2, h3, p, cite {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 82%; }
+    50% { background-position: 100% 19%; }
+    100% { background-position: 0% 82%; }
+}
+
+.banner {
+    font-size: 9em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: "Honk", system-ui;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: "MORF" 15, "SHLN" 50;
+}
+.wrapper p, h3, p, cite {
+    font-family: "Bangers", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+}
+.wrapper p{
+    font-size: 2.7rem;
+    color: white;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 2px black;
+}
+h3 {
+    font-weight: 500;
+}
+/* Section Styling */
+section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border: 4px solid rgb(0, 0, 0);
+    color: #030303;
+
+    border-width: 3px 3px 5px 5px;
+    border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+    transform: rotate(-2deg);
+}
+
+.features{
+    background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(25)" opacity="0.8" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23d68810"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
+    #ffcd28;
+  background-size: 13px, 100%;
+}
+.testimonials{
+    border-width: 5px 3px 3px 5px;
+  border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+  transform: rotate(2deg);
+
+  background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(0)" opacity="0.2" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23250E17"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
+    #c52754;
+    background-size: 10px, 100%;
+}
+.how-it-works{
+    background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(25)" opacity="0.3" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23250E17"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
+    #00f5f9;
+  background-size: 12px, 100%;
+}
+
+.how-it-works ol {
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 40px;
+    background: greenyellow;
+    transition: all 0.3s ease-in-out;
+ }
+ .how-it-works ol:hover{
+    transform: translateY(-7px);
+}
+/* Feature Item Styling */
+.feature-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.feature-item {
+    flex: 1 1 calc(33% - 20px);
+    padding: 20px;
+    backdrop-filter: blur(8px);
+    color: #030303;
+    border-radius: 40px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid rgb(0, 0, 0);
+}
+.feature-item:hover {
+    transform: translateY(-7px);
+}
+
+
+#f1{
+    background: rgb(245, 106, 106);
+}
+#f2{
+    background: rgb(0, 255, 191);
+}
+#f3{
+    background: lightgreen;
+}
+
+
+/* Blockquote Styling */
+blockquote {
+    font-style: normal;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    color: #000000;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid black;
+    transition: all 0.3s ease-in-out;
+}
+blockquote:hover{
+    transform: translateY(-7px);
+}
+blockquote p {
+    font-weight: 200;
+}
+#ut1{
+    background: peru;
+}
+#ut2{
+    background: rgb(255, 217, 0);
+}
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+}
+
+footer p {
+    margin: 5px 0; /* Separate paragraphs a little */
+}
+
+#foot_msg {
+    background: #ddd;
+    border: 1px solid #222;
+    box-shadow: 3px 3px 0 #222;
+    color: #070707;
+    font-size: 1rem;
+    width: fit-content; /* Shrinks to fit content */
+    padding: 10px 20px; /* Add some padding */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center;
+    margin-top: 10px; /* Space between elements */
+}
+
+
+
+/* Remove your old carousel styles */
+
+@keyframes slides {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    overflow: hidden;
+    padding: 30px 0px;
+    white-space: nowrap;
+    position: relative;
+    
+    /* Frosted glass effect */
+    background: rgba(221, 255, 0, 0.5);  /* Semi-transparent background */
+    backdrop-filter: blur(10px);  /* Apply blur for frosted effect */
+    -webkit-backdrop-filter: blur(10px);  /* For Safari */
+  }
+  
+  
+  .logos:before, .logos:after {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 250px;
+    height: 100%;
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    
+  }
+  
+  .logos:after {
+    right: 0;
+   
+  }
+  
+  .logo_items {
+    display: inline-block;
+    animation: 12s slides infinite linear;  /* Increased speed */
+  }
+  
+  .logos:hover .logo_items {
+    animation-play-state: paused;
+  }
+  
+  .logo_items img {
+     height: 150px;       /*this property increases carousel image size */
+  }
+  
+  
+
+
+
+
+
+.Section_headings {
+    background: #ddd;
+    border: 1px solid #222;
+    box-shadow: 3px 3px 0 #222;
+    color: rgb(5, 5, 5);
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    width: fit-content;
+    padding: 4px;
+    margin-bottom: 4%;
+}
+
+
+
+
+/* Button Styling */
+#chtBtn {
+    display: inline-flex;
+    margin: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    font-size: 1.2em;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid white;
+    box-shadow: 5px 6px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+    position: relative; /* Ensure button is positioned relative */
+    z-index: 3; /* Set a higher z-index to ensure visibility above the overlay */
+    font-family: "Bangers", system-ui;
+    font-weight: 100;
+    font-style: normal;
+}
+
+#chtBtn:hover {
+    transform: scale(1.05);
+    background-color: white;
+    color: black;
+}
+
+  /* Navbar Styling */
+.navbar {
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3);
+    background-size: 1800% 1800%;
+    animation: rainbow 10s ease infinite;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-top: 4px solid black;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-family: "Bangers", system-ui;
+    color: #000000;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    background-color: rgb(208, 202, 202);
+    transition: background-color 0.3s, transform 0.2s;
+    border: 2px solid rgb(0, 0, 0);
+    border-width: 5px 3px 3px 5px;
+    border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+    transform: rotate(2deg);
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    transform: scale(1.05);
+    border: 2px solid black;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Page - Viloir</title>
+    <link rel="icon" href="assets/misc/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bungee+Shade&family=Honk&family=Poppins:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/root/funny.css">
+    <link rel="stylesheet" href="css/responsive/funny_responsive.css">
+</head>
+<body>
+
+    <div class="video-container">
+        <h1 class="video-heading">Oops! Wrong Credentials</h1>
+        <video autoplay loop id="funnyVideo">
+            <source src="assets/misc/funny.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1 class="todo-heading">Things to do:</h1>
+        <ol class="todo-list">
+            <li style="-webkit-text-fill-color: rgb(0, 255, 187);-webkit-text-stroke: 1px black;font-size: 1.7rem;">Check internet connection.</li>
+            <li style="-webkit-text-fill-color: rgb(234, 255, 0);-webkit-text-stroke: 1px black;font-size: 1.7rem;">Make sure you have signed up before logging in.</li>
+            <li style="-webkit-text-fill-color: rgb(239, 182, 60);-webkit-text-stroke: 1px black;font-size: 1.7rem;">Use your college email ID only.</li>
+            <li style="-webkit-text-fill-color: rgb(81, 255, 0);-webkit-text-stroke: 1px black;font-size: 1.7rem;">Verify your email before logging in.</li>
+            <li style="-webkit-text-fill-color: rgb(241, 79, 76);-webkit-text-stroke: 1px black;font-size: 1.7rem;">Use mobile data.</li>
+        </ol>
+    </div>
+
+    <script>
+        // Hide controls and set volume
+        const video = document.getElementById('funnyVideo');
+        video.volume = 0.5; // Adjust volume as needed
+    </script>
+</body>
+</html>

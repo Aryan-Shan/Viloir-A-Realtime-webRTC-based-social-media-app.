@@ -1,0 +1,311 @@
+/* General Body Styling */
+body {
+    font-family: "Bangers", system-ui;
+    margin: 0;
+    padding: 0;
+    background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(25)" opacity="0.3" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23250E17"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
+    #fff;
+    background-size: 12px, 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Online User Count - Top Left Corner */
+/* Online User Count - Positioned Below the Navbar */
+#onlineCountContainer {
+    position: fixed;
+    top: 6.5rem; /* Adjusted for the navbar height (4rem) */
+    left: 10px;
+    padding: 1px 15px;
+    background: rgb(199, 199, 199);
+    border: 2px solid black;
+    border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.4rem;
+    color: black;
+    z-index: 3;
+    margin-top: 0;
+}
+#onlineCount{
+    color: green;
+}
+/* Video Container */
+#videoContainer {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Remote Video - Move it closer to the navbar */
+#remoteVideo {
+    margin-top: 0px; /* Bring it closer to the navbar */
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid #000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(25)" opacity="0.8" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23d68810"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
+    #7f7f7e;
+  background-size: 13px, 100%;
+  transform: scaleX(1);
+}
+
+/* Local Video (Larger Circle) */
+#localVideo {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    object-fit: cover;
+    background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(0)" opacity="0.2" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23250E17"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
+    #c52754;
+    background-size: 10px, 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transform: scaleX(1);
+}
+
+/* Controls - Bottom Center */
+.controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+/* Button Styling */
+button {
+    font-family: "Bangers", system-ui;
+    font-weight: 100;
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #bcb2b2;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #ffe72f;
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+#logoutBtn {
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+}
+
+#logoutBtn:hover {
+    background-color: #ff0019;
+}
+
+
+
+
+/* Navbar Styling */
+.header {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    padding: 0;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.header li {
+    display: inline-block;
+}
+
+.header li a {
+    display: flex;
+    align-items: center; /* Align GIF and text */
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: black;
+    padding: 1rem 2rem;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+    background-color: #c8c5c5;
+}
+
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-family: "Honk", system-ui;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: "MORF" 15, "SHLN" 50;
+}
+
+/* Nav Icon (GIF) Styling */
+.header li a img.nav-icon {
+    width: 24px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 8px; /* Space between the GIF and the text */
+}
+
+/* Menu Styling */
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* Menu Icon */
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 2rem 1rem;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 12px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* Menu Button */
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+/* Loading Overlay */
+#loadingOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5; /* Above videos */
+    display: none; /* Hidden by default */
+}
+
+#loadingOverlay p {
+    background-color: rgb(255, 255, 255);
+    padding: 6px;
+    border: 4px solid transparent; /* Transparent border to show gradient */
+    border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), 
+                      linear-gradient(90deg, 
+                        red, orange, yellow, green, cyan, blue, violet, red);
+    background-size: 100% 100%, 300% 100%; /* Adjust background size */
+    animation: rainbowBorder 3s linear infinite; /* Attach animation */
+}
+
+/* Keyframes to animate the gradient */
+@keyframes rainbowBorder {
+    0% {
+        background-position: 0% 50%, 0% 50%;
+    }
+    100% {
+        background-position: 0% 50%, 100% 50%;
+    }
+}
+
+
+
+.loading-gif {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+
+/* Media Queries */
+@media (min-width: 48em) {
+    .header li {
+        float: left;
+    }
+    .header li a {
+        padding: 20px 30px;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    }
+}

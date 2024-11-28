@@ -1,0 +1,95 @@
+/* Media Queries for Funny Page */
+
+/* Tablet and Smaller Devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+    body{
+        padding: 20px;
+    }
+    .video-heading {
+        font-size: 2.5rem;
+    }
+
+    .todo-heading {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+
+    .video-container {
+        width: 90%;
+        max-width: 500px;
+        padding: 15px;
+    }
+
+    .todo-list li {
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .video-heading {
+        font-size: 2rem;
+    }
+
+    .todo-heading {
+        font-size: 1.8rem;
+    }
+
+    .video-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .todo-list {
+        padding-left: 20px;
+    }
+
+    .todo-list li {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+}
+
+/* Small Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .video-heading {
+        font-size: 1.5rem;
+    }
+
+    .todo-heading {
+        font-size: 1.6rem;
+    }
+
+    .video-container {
+        padding: 8px;
+        border-width: 3px;
+    }
+
+    video {
+        border-radius: 8px;
+    }
+
+    .todo-list li {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+}
+
+/* Very Small Devices (max-width: 320px) */
+@media (max-width: 320px) {
+    .video-heading {
+        font-size: 1.2rem;
+    }
+
+    .todo-heading {
+        font-size: 1.4rem;
+    }
+
+    .video-container {
+        padding: 5px;
+    }
+
+    .todo-list li {
+        font-size: 0.9rem;
+    }
+}

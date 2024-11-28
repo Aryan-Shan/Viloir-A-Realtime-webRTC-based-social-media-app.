@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    padding:0;
+    background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(25)" opacity="0.8" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23d68810"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
+    #98eac9;
+  background-size: 13px, 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  #nameEntry {
+    position: fixed;
+    left: 50%; /* Fix: Percentage symbol added */
+    top: 50%; /* Fix: Percentage symbol added */
+    transform: translate(-50%, -50%); /* Fix: Both x and y values needed for centering */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    flex-direction: column;
+    text-align: center;
+}
+
+  
+  #messages {
+    position: fixed;
+    font-family: "Bangers", system-ui;
+    font-style: normal;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: calc(100% - 50px);
+    background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(25)" opacity="0.3" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23250E17"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
+    #cfcfcf;
+    background-size: 12px, 100%;
+    overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column-reverse;  /* Makes new messages appear at the bottom */
+    align-items: flex-start;         /* Align messages to the start (left) by default */
+  }
+  
+  #sendMsg {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: #AAA;
+  }
+  
+  #msgTxt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100% - 100px);
+    height: 100%;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  
+  #msgBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    font-family: "Bangers", system-ui;
+    font-style: normal;
+    font-size: 1.6em;
+  }
+  
+  .outer {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+  }
+  
+  #inner {
+    padding: 15px;
+    box-sizing: border-box;
+    max-width: 80%;
+    word-wrap: break-word;
+  }
+  .me {
+    background: #d2d1d1;
+    border: 1px solid rgb(2, 2, 2);
+    border-width: 5px 3px 3px 5px;
+    border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+    color: #090909;
+    text-align: right;
+    align-self: flex-end;  /* Align the user's messages to the right */
+    margin-left: auto;     /* Push the message to the right */
+  }
+  
+  .notMe {
+    border: 1px solid rgb(2, 2, 2);
+    padding: 30px;
+    border-width: 5px 3px 3px 5px;
+    /* border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%; */
+    background: #89e5f6;
+    color: #000;
+    text-align: left;
+    align-self: flex-start; /* Align others' messages to the left */
+    margin-right: auto;     /* Push the message to the left */
+    line-height: 1.8;       /* Add more spacing between lines */
+}
+
+  
+/* Style for the DELETE button */
+.delete-btn {
+  font-family: "Bangers", system-ui;
+    font-weight: 100;
+    font-style: normal;
+  background-color: #f44336;  /* Red background */
+  color: white;  /* White text */
+  border: 1px solid black;  /* Remove default border */
+  border-width: 3px 3px 5px 5px;
+    border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+  padding: 5px 10px;  /* Padding for button */
+  margin-left: 10px;
+  cursor: pointer;  /* Pointer cursor on hover */
+  font-size: 14px;  /* Font size */
+  transition: background-color 0.3s ease; /* Smooth transition for background */
+}
+
+/* Hover effect for the DELETE button */
+.delete-btn:hover {
+  background-color: #d32f2f;  /* Darker red on hover */
+}
+
+  #title{
+    border: 2px solid rgb(2, 2, 2);
+    border-width: 3px 3px 5px 5px;
+    border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    padding:9px;
+    margin: 15px;
+    background: gray;
+    flex-direction: column;
+    font-family: "Bangers", system-ui;
+    font-weight: 100;
+    font-style: normal;
+    -webkit-text-fill-color: rgb(236, 215, 27);;
+    -webkit-text-stroke: 2px black;
+  }
+
+  #enterBtn {
+    padding: 10px 30px;
+    font-family: "Bangers", system-ui;
+    font-weight: 100;
+    font-style: normal;
+    background: #e1bebe;
+    color: #000000;
+    border: 2px solid black;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+  
+  #enterBtn:hover {
+    background: #56ea56;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #enterBtn:active {
+    background: #3367d6;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  /* sender and reciever tag styles */
+
+  .sender_me {
+    color: #000000;    /* Google blue color */
+    border: 2px solid black;
+    background: grey;
+    padding: 5px;
+    border-width: 3px 3px 5px 5px;
+    border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+}
+
+
+.sender_notMe {
+  color: #000000;    /* Google blue color */
+  border: 2px solid black;
+  background: rgb(201, 200, 200);
+  padding: 5px;
+  border-width: 3px 3px 5px 5px;
+  border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+}
+
+#signinGif {
+  margin-top: 30px; /* Space between button and GIF */
+  width: 90px;     /* Adjust width as needed */
+  height: auto;     /* Maintain aspect ratio */
+}

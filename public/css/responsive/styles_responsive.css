@@ -1,0 +1,222 @@
+/* Responsive Media Queries for login.html */
+
+/* Tablet Devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+    body {
+        flex-direction: column !important;
+        padding: 40px !important;
+    }
+
+    .container {
+        padding: 30px !important;
+        width: 40% !important;
+        transform: none !important;
+    }
+
+    .eyes {
+        gap: 20px !important;
+        height: 80px !important;
+    }
+
+    .eye {
+        width: 70px !important;
+        height: 35px !important;
+    }
+
+    .pupil {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .form-box {
+        width: 80% !important;
+        padding: 20px !important;
+    }
+
+    .form-box h1 {
+        font-size: 2.8em !important;
+    }
+
+    input {
+        padding: 12px !important;
+        font-size: 1.1rem !important;
+    }
+
+    .glow-btn {
+        padding: 12px !important;
+        font-size: 1.1rem !important;
+    }
+
+    .checkbox-container {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        font-size: 1rem !important;
+    }
+
+    .alert {
+        width: 80% !important;
+        max-width: 350px !important;
+        padding: 15px !important;
+    }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px !important;
+        width: 40% !important;
+    }
+
+    .eyes {
+        gap: 15px !important;
+        height: 70px !important;
+    }
+
+    .eye {
+        width: 60px !important;
+        height: 30px !important;
+    }
+
+    .pupil {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .form-box {
+        width: 90% !important;
+        padding: 15px !important;
+    }
+
+    .form-box h1 {
+        font-size: 2.8em !important;
+    }
+
+    input {
+        padding: 10px !important;
+        font-size: 1rem !important;
+    }
+
+    .glow-btn {
+        padding: 10px !important;
+        font-size: 1rem !important;
+    }
+
+    .checkbox-container {
+        font-size: 0.95rem !important;
+        gap: 5px !important;
+    }
+
+    .checkbox-container a {
+        margin-top: 5px !important;
+    }
+
+    .alert {
+        width: 90% !important;
+        max-width: 300px !important;
+        padding: 10px !important;
+    }
+}
+
+/* Small Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px !important;
+    }
+
+    .container {
+        padding: 15px !important;
+        width: 90% !important;
+    }
+
+    .eyes {
+        gap: 10px !important;
+        height: 60px !important;
+    }
+
+    .eye {
+        width: 50px !important;
+        height: 25px !important;
+    }
+
+    .pupil {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .form-box {
+        width: 100% !important;
+        padding: 10px !important;
+    }
+
+    .form-box h1 {
+        font-size: 2.8em !important;
+    }
+
+    input {
+        padding: 8px !important;
+        font-size: 0.9rem !important;
+    }
+
+    .glow-btn {
+        padding: 8px !important;
+        font-size: 0.9rem !important;
+    }
+
+    .checkbox-container {
+        font-size: 0.85rem !important;
+        align-items: flex-start !important;
+    }
+
+    .alert {
+        padding: 8px !important;
+    }
+}
+
+/* Very Small Devices (max-width: 320px) */
+@media (max-width: 320px) {
+    .container {
+        padding: 10px !important;
+    }
+
+    .eyes {
+        gap: 8px !important;
+        height: 50px !important;
+    }
+
+    .eye {
+        width: 40px !important;
+        height: 20px !important;
+    }
+
+    .pupil {
+        width: 15px !important;
+        height: 15px !important;
+    }
+
+    .form-box {
+        padding: 8px !important;
+    }
+
+    .form-box h1 {
+        font-size: 2.8em !important;
+    }
+
+    input {
+        padding: 6px !important;
+        font-size: 0.8rem !important;
+    }
+
+    .glow-btn {
+        padding: 6px !important;
+        font-size: 0.8rem !important;
+    }
+
+    .checkbox-container {
+        font-size: 0.75rem !important;
+    }
+
+    .alert {
+        padding: 5px !important;
+        max-width: 280px !important;
+    }
+}

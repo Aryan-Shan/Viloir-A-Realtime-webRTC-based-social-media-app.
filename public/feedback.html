@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form - Viloir</title>
+    <link rel="icon" href="assets/misc/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/root/feedback.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bungee+Shade&family=Honk&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tajawal:wght@300&display=swap" rel="stylesheet">
+    <script src="js/feedback.js" defer></script>
+  </head>
+  <body>
+    <div class="feedback-form-container">
+      <h2>Feedback Form</h2>
+      <form
+        id="feedbackForm"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+      >
+        <!-- Web3Forms Access Key -->
+        <input
+          type="hidden"
+          name="access_key"
+          value="dd041053-aa87-4199-8b7a-0a9f18391a85"
+        />
+
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Enter your name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Enter your email"
+          />
+          <small id="emailError" class="error-message"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            placeholder="Enter your feedback"
+          ></textarea>
+          <small id="messageError" class="error-message"></small>
+        </div>
+
+        <div class="form-group rating">
+          <label>Rate Your Experience:</label>
+          <div class="star-rating">
+            <input type="radio" id="star1" name="rating" value="5" /><label
+              for="star1"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="4" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="2" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" id="star5" name="rating" value="1" /><label
+              for="star5"
+              >&#9733;</label
+            >
+          </div>
+        </div>
+
+        <!-- Honeypot Spam Protection -->
+        <input
+          type="checkbox"
+          name="botcheck"
+          class="hidden"
+          style="display: none"
+        />
+
+        <!-- Optional Custom Success Page (Uncomment if needed) -->
+        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+        <button type="submit">Submit Feedback</button>
+        <small id="formStatus" class="error-message"></small>
+      </form>
+    </div>
+  </body>
+</html>

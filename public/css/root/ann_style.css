@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(25)" opacity="0.3" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g fill="%23250E17"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
+    #fff;
+    background-size: 12px, 100%;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+header h1 {
+    font-family: "Bangers", system-ui;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 2px black;
+    border: 2px solid black;
+    background: rgb(215, 226, 62);
+    border-width: 5px 3px 3px 5px;
+    border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
+}
+
+/* Announcements Section */
+.announcements {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Card Styles */
+.card {
+    display: flex;
+    flex-direction: column;
+    background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(0)" opacity="0.2" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g fill="%23250E17"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
+    #dc89a4;
+    background-size: 10px, 100%;
+    border: 2px solid rgb(0, 0, 0);
+    border-width: 3px 3px 5px 5px;
+    border-radius: 4% 95% 6% 95% / 95% 4% 92% 5%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    height: fit-content; /* Ensures the card height matches its content */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    padding: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+
+.card img {
+    margin-top: 18px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid black;
+    border-width: 3px 3px 5px 5px;
+    border-radius: 4% 95% 6% 95% / 95% 4% 92% 5%;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 0; /* Prevents the content from growing the card */
+    height: auto; /* Ensures content can expand naturally */
+}
+
+/* Description Text */
+
+.card-content p {
+    margin: 10px 0;
+    color: #090909;
+    font-family: "Bangers", system-ui;
+    background-color: white;
+    border: 2px solid black;
+    border-width: 5px 3px 3px 5px;
+    border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
+    padding: 15px;
+    height: auto; /* Allow the description to expand naturally */
+    overflow: visible; /* Ensure the full content is visible */
+    text-overflow: ellipsis; /* Adds ellipsis for overflowed text (optional) */
+}
+
+/* Button */
+.card-content a {
+    text-decoration: none;
+    font-family: "Bangers", system-ui;
+    background: #e0e31f;
+    color: #000000;
+    padding: 10px 20px;
+    border: 2px solid rgb(23, 23, 23);
+    border-width: 5px 3px 3px 5px;
+    border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
+    display: inline-block;
+    transition: background 0.3s ease-in-out;
+    margin-top: auto; /* Keeps button at the bottom */
+    width: fit-content;
+}
+
+.card-content a:hover {
+    background: #e6ea05;
+    border-width: 3px 3px 5px 5px;
+    border-radius: 4% 95% 6% 95% / 95% 4% 92% 5%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .announcements {
+        grid-template-columns: 1fr; /* Stack cards vertically on smaller screens */
+        gap: 15px;
+    }
+}
